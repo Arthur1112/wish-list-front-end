@@ -42,7 +42,7 @@ export const App: FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <WishForm />
-      <List>
+      <List id="list">
         {wishes.map((wish) => {
           return <ListItem key={wish.name}>{wish.name}</ListItem>;
         })}

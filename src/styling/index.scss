@@ -13,6 +13,14 @@ form {
   align-content: center;
 }
 
+#list {
+  display: grid;
+  margin: 1em;
+  padding: 1em;
+  justify-content: center;
+  align-content: center;
+}
+
 #1FormControl {
   width: 10%;
 }
@@ -21,6 +29,7 @@ switch {
   width: 10%;
 }
 
-.css-14okwrb-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+.MuiSwitch-input.PrivateSwitchBase-input.css-1m9pwf3 {
   color: #09ff32;
+  background-color: #09ff32;
 }
