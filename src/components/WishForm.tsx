@@ -56,7 +56,7 @@ export const WishForm: FC = () => {
         </Select>
       </FormControl>
       <p>Is it actually possible?</p>
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack id="switchOne" direction="row" spacing={1} alignItems="center">
         <Typography>No</Typography>
         <Switch
           color="warning"
@@ -66,6 +66,7 @@ export const WishForm: FC = () => {
         />
         <Typography>Yes</Typography>
       </Stack>
+      <br />
       <Button id="button" type="submit">
         Submit
       </Button>

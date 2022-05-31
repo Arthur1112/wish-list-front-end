@@ -41,8 +41,12 @@ export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <h4>Arthur's</h4>
+      <h3>
+        <span>Wish List</span>
+        <span>Wish List</span>
+      </h3>
       <WishForm />
-      <h3>Wishes</h3>
       <List id="list">
         {wishes.map((wish) => {
           return (
