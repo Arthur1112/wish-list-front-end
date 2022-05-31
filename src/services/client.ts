@@ -2,6 +2,6 @@ import axios from "axios";
 
 export const getClient = () => {
   return axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "http://localhost:3000", //talking to backend
   });
 };
