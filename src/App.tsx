@@ -8,6 +8,7 @@ import {
 import { FC, useEffect, useState } from "react";
 import { WishForm } from "./components/WishForm";
 import { getWishes, Wish } from "./services/wishes";
+import "./styling/index.scss";
 
 const theme = createTheme({
   typography: {
