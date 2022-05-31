@@ -13,6 +13,14 @@ form {
   align-content: center;
 }
 
+h3 {
+  display: grid;
+  font-family: cursive;
+  font-size: xx-large;
+  justify-content: center;
+  align-content: center;
+}
+
 #list {
   display: grid;
   margin: 1em;
@@ -27,9 +35,4 @@ form {
 
 switch {
   width: 10%;
-}
-
-.MuiSwitch-input.PrivateSwitchBase-input.css-1m9pwf3 {
-  color: #09ff32;
-  background-color: #09ff32;
 }

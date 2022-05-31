@@ -5,7 +5,9 @@ import {
   InputLabel,
   MenuItem,
   Select,
+  Stack,
   Switch,
+  Typography,
 } from "@mui/material";
 import { FC, FormEvent, useState } from "react";
 import { createWish } from "../services/wishes";
@@ -53,10 +55,17 @@ export const WishForm: FC = () => {
           <MenuItem value={3}>{3}</MenuItem>
         </Select>
       </FormControl>
-      <Switch
-        checked={isPossible}
-        onChange={() => setIsPossible(!isPossible)}
-      />
+      <p>Is it actually possible?</p>
+      <Stack direction="row" spacing={1} alignItems="center">
+        <Typography>No</Typography>
+        <Switch
+          color="warning"
+          checked={isPossible}
+          onChange={() => setIsPossible(!isPossible)}
+          inputProps={{ "aria-label": "ant design" }}
+        />
+        <Typography>Yes</Typography>
+      </Stack>
       <Button id="button" type="submit">
         Submit
       </Button>
