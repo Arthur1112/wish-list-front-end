@@ -13,3 +13,8 @@ export const getWishes = async () => {
 
   return data as Wish[];
 };
+
+export const createWish = async (wish: Wish) => {
+  const client = getClient();
+  await client.post("/", wish);
+};
