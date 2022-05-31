@@ -26,7 +26,7 @@ export const WishForm: FC = () => {
         placeholder="Wish Name"
       />
       <Input
-        value={name}
+        value={type}
         onChange={(e) => setType(e.target.value)}
         placeholder="Wish Type"
       />
