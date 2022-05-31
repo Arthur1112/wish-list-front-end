@@ -41,7 +41,7 @@ export const WishForm: FC = () => {
         placeholder="Wish Type"
       />
       <br />
-      <FormControl>
+      <FormControl id="1FormControl">
         <InputLabel>Priority</InputLabel>
         <Select
           value={priority}
@@ -57,7 +57,9 @@ export const WishForm: FC = () => {
         checked={isPossible}
         onChange={() => setIsPossible(!isPossible)}
       />
-      <Button type="submit">Submit</Button>
+      <Button id="button" type="submit">
+        Submit
+      </Button>
     </form>
   );
 };

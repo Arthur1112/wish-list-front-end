@@ -1,8 +1,8 @@
-Button {
+#button {
   padding: 3px 10px;
-  font-size: 12px;
-  border-radius: 3px;
-  border: 1px solid #e1e4e8;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px dashed #09ff32;
 }
 
 form {
@@ -11,4 +11,16 @@ form {
   padding: 1em;
   justify-content: center;
   align-content: center;
+}
+
+#1FormControl {
+  width: 10%;
+}
+
+switch {
+  width: 10%;
+}
+
+.css-14okwrb-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: #09ff32;
 }
