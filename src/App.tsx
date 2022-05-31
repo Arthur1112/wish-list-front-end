@@ -1,5 +1,6 @@
 import { CssBaseline, createTheme, ThemeProvider } from "@mui/material";
-import { FC } from "react";
+import { FC, useState } from "react";
+import { Wish } from "./services/wishes";
 
 const theme = createTheme({
   typography: {
@@ -21,6 +22,8 @@ const theme = createTheme({
 });
 
 export const App: FC = () => {
+  const [wishes, setWishes] = useState<Wish[]>([]);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

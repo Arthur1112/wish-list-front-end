@@ -1,6 +1,6 @@
 import { getClient } from "./client";
 
-interface Wish {
+export interface Wish {
   name: string;
   type: string;
   isPossible: boolean;
