@@ -1,4 +1,10 @@
-import { CssBaseline, createTheme, ThemeProvider } from "@mui/material";
+import {
+  CssBaseline,
+  createTheme,
+  ThemeProvider,
+  List,
+  ListItem,
+} from "@mui/material";
 import { FC, useEffect, useState } from "react";
 import { getWishes, Wish } from "./services/wishes";
 
@@ -31,6 +37,11 @@ export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <List>
+        {wishes.map((wish) => {
+          return <ListItem key={wish.name}>{wish.name}</ListItem>;
+        })}
+      </List>
     </ThemeProvider>
   );
 };
